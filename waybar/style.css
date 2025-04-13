@@ -1,0 +1,58 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+/*    border: 2px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 5px; 
+    */
+}
+
+
+#battery,
+#memory,
+#disk,
+#backlight,
+#network,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    color: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 5px;
+}
+#pulseaudio {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+#battery.critical:not(.charging){
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 15px; 
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.479);
+}
+#workspaces button {
+    margin-right: 5px;
+    color: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 4px 10px;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+#workspaces button.active {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 4px 20px;
+}
